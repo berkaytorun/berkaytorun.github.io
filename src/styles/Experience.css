@@ -1,0 +1,15 @@
+.techstack {
+    background-color: #21e9e9 !important;
+    border-radius: 50px !important;
+}
+
+.button-container{
+    display: flex;
+    gap: 2px 2px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.MuiButtonBase-root {
+    pointer-events: none;
+}
