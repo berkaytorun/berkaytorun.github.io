@@ -1,8 +1,15 @@
 import Pong from '../assets/pong.png';
 import Discord from '../assets/discord.png';
 import Arduino from '../assets/arduino.jpg';
+import Reactwebsite from '../assets/reactportfolio.png';
 
 export const ProjectList = [
+	{
+		name: 'React Portfolio Website',
+		image: Reactwebsite,
+		url: 'https://github.com/berkaytorun/berkaytorun.github.io',
+		skills: ['Reactjs', 'Html', 'CSS','Nodejs', 'MaterialUI'],
+	},
 	{
 		name: 'Pong Game',
 		image: Pong,
