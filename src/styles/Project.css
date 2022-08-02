@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #f0f0f0;
+  background-color: #3e497a;
 }
 
 .projects .projectTitle {
@@ -31,6 +33,7 @@
   padding-bottom: 5px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 .projectItem:hover {
@@ -51,6 +54,7 @@
 
 .projectItem h1 {
   font-size: 25px;
+  color: #21325e;
 }
 
 .button-container {

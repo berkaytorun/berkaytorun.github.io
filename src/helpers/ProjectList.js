@@ -2,13 +2,14 @@ import Pong from '../assets/pong.png';
 import Discord from '../assets/discord.png';
 import Arduino from '../assets/arduino.jpg';
 import Reactwebsite from '../assets/reactportfolio.png';
+import NoImage from '../assets/noimage.png';
 
 export const ProjectList = [
 	{
 		name: 'React Portfolio Website',
 		image: Reactwebsite,
 		url: 'https://github.com/berkaytorun/berkaytorun.github.io',
-		skills: ['Reactjs', 'Html', 'CSS','Nodejs', 'MaterialUI'],
+		skills: ['Reactjs', 'Html', 'CSS', 'Nodejs', 'MaterialUI'],
 	},
 	{
 		name: 'Pong Game',
@@ -24,7 +25,7 @@ export const ProjectList = [
 	},
 	{
 		name: 'Server Side Backend CRUD Library Website',
-		image: '',
+		image: NoImage,
 		url: 'https://github.com/berkaytorun/Server-side-web-development',
 		skills: ['Nodejs', 'Express', 'Handlebars', 'Js', 'Html', 'Css'],
 	},
@@ -36,13 +37,13 @@ export const ProjectList = [
 	},
 	{
 		name: 'Arduino Controller Information Server',
-		image: '',
+		image: NoImage,
 		url: 'https://github.com/berkaytorun/LightTrackingCanvas',
 		skills: ['Js', 'Handlebars', 'Nodejs', 'Express', 'Html', 'Css'],
 	},
 	{
 		name: 'Toll Gate Simulation ',
-		image: '',
+		image: NoImage,
 		url: 'https://github.com/berkaytorun/Agile-project-viken-client',
 		skills: ['Android', 'Raspberry Pi', 'Java', 'Js'],
 	},
