@@ -5,15 +5,28 @@ import ReorderIcon from '@material-ui/icons/Reorder';
 
 function NavBar() {
 	const [expandNavbar, setExpandNavbar] = useState(false);
+	const [sticky, setSticky] = React.useState(false);
 
 	const location = useLocation();
+	const handleScroll = () => {
+		const offset = window.scrollY;
+		if (offset > 50) {
+			setSticky(true);
+		} else {
+			setSticky(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+	});
 
 	useEffect(() => {
 		setExpandNavbar(false);
 	}, [location]);
 
 	return (
-		<div className='navbar' id={expandNavbar ? 'open' : 'close'}>
+		<div className={sticky ? 'navbar sticky' : 'navbar'} id={expandNavbar ? 'open' : 'close'}>
 			<div className='toggleButton'>
 				<button
 					onClick={() => {

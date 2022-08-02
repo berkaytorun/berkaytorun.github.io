@@ -40,6 +40,13 @@
   cursor: pointer;
 }
 
+.sticky{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
 #open {
   height: 100vh;
 }
