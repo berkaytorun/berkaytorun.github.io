@@ -1,0 +1,11 @@
+services:
+  app:
+    build: 
+      context: .
+    volumes:
+      - .:/portfolio-website
+    ports:
+      - 3000:3000
+    image: app:portfolio-website
+    container_name: portfolio_container
+    command: yarn start
