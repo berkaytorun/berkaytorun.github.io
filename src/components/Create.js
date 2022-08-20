@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios/index.js';
 import '../styles/Create.css';
 import { enviroment } from '../helpers/.env';
@@ -9,6 +9,7 @@ function Create() {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [checkbox, setCheckbox] = useState(false);
+	let navigate = useNavigate();
 
 	const postData = () => {
 		axios
@@ -18,7 +19,7 @@ function Create() {
 				checkbox,
 			})
 			.then(() => {
-				window.history.back();
+				navigate('../api/read');
 			});
 	};
 

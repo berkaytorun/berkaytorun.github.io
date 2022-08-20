@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Checkbox, Form } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios/index.js';
 import '../styles/Create.css';
 import { enviroment } from '../helpers/.env';
@@ -9,6 +9,7 @@ function Update() {
 	const [lastName, setLastName] = useState('');
 	const [checkbox, setCheckbox] = useState(false);
 	const [id, setID] = useState(null);
+	let navigate = useNavigate();
 
 	useEffect(() => {
 		setID(localStorage.getItem('ID'));
@@ -24,7 +25,7 @@ function Update() {
 				checkbox,
 			})
 			.then(() => {
-				window.history.back();
+				navigate('../api/read');
 			});
 	};
 
