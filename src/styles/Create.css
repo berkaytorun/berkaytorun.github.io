@@ -1,0 +1,10 @@
+
+.create-form label {
+    color: #21325e !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px !important;
+}
+
+.create-form {
+    width: fit-content;
+}
